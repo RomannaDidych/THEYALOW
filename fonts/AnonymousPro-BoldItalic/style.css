@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Anonymous Pro';
+    src: local('Anonymous Pro Bold Italic'), local('Anonymous-Pro-Bold-Italic'),
+        url('AnonymousPro-BoldItalic.woff2') format('woff2'),
+        url('AnonymousPro-BoldItalic.woff') format('woff'),
+        url('AnonymousPro-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }

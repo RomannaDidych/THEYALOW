@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html  lang="ru">
+<head>
+	<title>THEYALLOW</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width initial-scale=1.0" />
+</head>
+<body class="body">	 
+	<div class="top">		
+			<header class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<div class="header__logo">
+							<a href="#" class="header__logo--img">
+								<img src="img/header/logo_star.png" alt="logo_star">
+							</a>
+							 <div  class="header__logo--text">
+								<a href="#" class="header__logo--link">theyallow<span>Craft By Css author.com</span></a>
+							 </div>							
+						</div>
+						<div class="header__burger">
+							<span></span>
+						</div>
+						<div class="header__nav">
+							<ul class="header__nav--list">
+								<li class="header__nav--item">
+									<a href="#" class="header__nav--link about_us">about us</a>
+								</li>
+								<li class="header__nav--item">
+									<a href="#" class="header__nav--link services">servises</a>
+								</li>
+								<li class="header__nav--item">
+									<a href="#" class="header__nav--link contact">contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>			
+			</header>
+			<div class="top__slider flex">
+				<div class="slider__container">
+					<div class="top__slide   is-active"> 
+						<div class="videoarea">
+							<video  class="top__video" width="275" height="165" poster="img/player/parrots.png" ontimeupdate="progressUpdate(this)" onended="videoEnd(this)">
+								<source src="video/trailer_4410.mp4.mp4" type="video/mp4">
+								<source src="movie.ogg" type="video/ogg"> 
+								 our browser does not support the video tag.								  					
+							</video>
+							<div class="top__video--start" onclick="play(this)">
+								<img src="img/player/icons/arrow.png" alt="" class="start">
+							</div>							
+							<div class="top__video--nav">
+								<div class="top__video--container">
+									<div class="play_pause" onclick="pause(this)">
+										<img src="img/player/icons/arrow.png" alt="">
+									</div>
+									<div class="progress" onclick="videoRewind(this)">
+										<div class="progress--done" data-done="0"></div>
+									</div>
+									<div class="volume">										
+										<img class="img_vol" src="img/player/icons/light.png" alt="" onclick="showVolumeBar(this)">
+	  									<div class="vol">
+	  										<input type="range" class="input_vol"  name="vol" min="0" max="100" oninput="changeVolume(this)">	  																				
+	  									</div>
+									</div>									
+								</div>	
+							</div>							
+						</div>
+						<div class="top__title">
+							<p>
+								the cool<br>
+								<span>the minimal</span>
+							</p>
+						</div>
+					</div>
+
+					<div class="top__slide">						
+						<div class="videoarea">
+							<video  class="top__video" width="275" height="165" poster="img/player/king_lion.png" ontimeupdate="progressUpdate(this)" onended="videoEnd(this)">
+								<source src="video/lion_king.mp4" type="video/mp4">
+								<source src="movie.ogg" type="video/ogg"> 
+								 our browser does not support the video tag.								  					
+							</video>
+							<div class="top__video--start" onclick="play(this)">
+								<img src="img/player/icons/arrow.png" alt="" class="start">
+							</div>							
+							<div class="top__video--nav">
+								<div class="top__video--container">
+									<div class="play_pause" onclick="pause(this)">
+										<img src="img/player/icons/arrow.png" alt="">
+									</div>
+									<div class="progress" onclick="videoRewind(this)">
+										<div class="progress--done" data-done="0"></div>
+									</div>
+									<div class="volume">										
+										<img class="img_vol" src="img/player/icons/light.png" alt="" onclick="showVolumeBar(this)">
+	  									<div class="vol">
+	  										<input type="range" class="input_vol"  name="vol" min="0" max="100" oninput="changeVolume(this)">	  																				
+	  									</div>
+									</div>									
+								</div>	
+							</div>							
+						</div>
+						<div class="top__title">
+							<p>
+								the first titlle<br>
+								<span>the minimal</span>
+							</p>
+						</div>
+					</div>
+					<div class="top__slide">						
+						<div class="videoarea">							
+							<video  class="top__video" width="275" height="165" poster="img/player/madagascar.png" ontimeupdate="progressUpdate(this)" onended="videoEnd(this)">	
+								<source src="video/madagascar2-tlr1_h480p.mp4.mp4" type="video/mp4">									
+								<source src="movie.ogg" type="video/ogg"> 
+								 our browser does not support the video tag.								  					
+							</video>
+							<div class="top__video--start" onclick="play(this)">
+								<img src="img/player/icons/arrow.png" alt="" class="start">
+							</div>							
+							<div class="top__video--nav">
+								<div class="top__video--container">
+									<div class="play_pause" onclick="pause(this)">
+										<img src="img/player/icons/arrow.png" alt="">
+									</div>
+									<div class="progress" onclick="videoRewind(this)">
+										<div class="progress--done" data-done="0"></div>
+									</div>
+									<div class="volume">										
+										<img class="img_vol" src="img/player/icons/light.png" alt="" onclick="showVolumeBar(this)">
+	  									<div class="vol">
+	  										<input type="range" class="input_vol"  name="vol" min="0" max="100" oninput="changeVolume(this)">	  																				
+	  									</div>
+									</div>									
+								</div>	
+							</div>							
+						</div>
+						<div class="top__title">
+							<p>
+								the big titlle<br>
+								<span>the minimal</span>
+							</p>
+						</div>
+					</div>
+
+					<div class="top__slider--btn previous" data-slides-name="top__slide">
+						<img src="img/player/icons/left.png" alt="" class="top__slider--arrow">
+					</div>
+					<div class="top__slider--btn next" data-slides-name="top__slide">
+						<img src="img/player/icons/right.png" alt="" class="top__slider--arrow">
+					</div>
+				</div>
+			</div>
+
+	</div> <!-- top -->
+
+	<div class="icons">
+		<div class="icons__container">
+			<div class="icons__item">				
+				<div class="icon--img">
+					<img src="img/mid_bar/icons/designe.png" alt="" >						
+				</div>
+				<div class="icon--text">better design</div>				
+			</div>
+			<div class="icons__item">				
+				<div class="icon--img">
+					<img src="img/mid_bar/icons/customise.png" alt="" >
+				</div>
+				<div class="icon--text">Customise</div>				
+			</div>
+			<div class="icons__item">				
+				<div class="icon--img">
+					<img src="img/mid_bar/icons/itsfree.png" alt="" >
+				</div>
+				<div class="icon--text">Its Free</div>				
+			</div>
+		</div>
+	</div><!-- icons -->
+	
+	<div class="anons">
+		<div class="anons__container">
+			<h2 class="anons__title">
+				Lorem ipsum dolor sit amet.
+			</h2>
+			<div class="anons__content">
+				<div class="anons__youtube">
+					<div class="anons__inform">						
+							<div class="text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur amet non quos qui cum inventore, beatae accusamus, officiis corporis distinctio rem, magnam cupiditate consequatur eaque tempore sint, modi. Illum, aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, explicabo? Nulla quia accusantium quisquam, tempora expedita eum temporibus quaerat itaque nobis quidem saepe rerum ullam consequuntur consequatur, eius ab deserunt dolor, nostrum unde ipsam quibusdam totam culpa? Possimus, accusamus, perspiciatis.
+							</div>
+							<div class="plus_button">
+								<img src="img/twitter/icons/plus.png" alt="">
+							</div>							
+					</div>
+					<div class="anons__video">
+						<iframe class="video_yt" width="315" height="233" src="https://www.youtube.com/embed/fHbCxSOdmAo"></iframe>						
+					</div>
+					<div class="anons__date">
+						<p class="number">25 <span class="month">jannuery</span></p>
+					</div>
+				</div>
+				<div class="anons__twitter">
+					<div class="anons__icon">
+						<div class="img_box">
+							<img src="img/twitter/icons/twitter.png" alt="">
+						</div>
+					</div>
+					<div class="anons__chat">
+						<div class="anons__message mes1">
+							<p>Daily Mobile UI Design Inspiration #1 via@cssauthor</p>
+						</div>
+						<div class="anons__message mes2">
+							<p>Daily Mobile UI Design Inspiration #1 via@cssauthor</p>
+						</div>
+						<div class="anons__message mes3">
+							<p>Daily Mobile UI Design Inspiration #1 via@cssauthor</p>
+						</div>
+						<form action="https://twitter.com/explore" class="anons__twitt">
+							<input type="text" class="inp_field">
+							<button class="tw-button">Twitt</button>
+						</form>						
+					</div>
+					<div class="plus_button plus--twitt">
+						<img src="img/twitter/icons/plus.png" alt="">
+					</div>
+				</div>
+			</div>
+				
+		</div>
+	</div><!--anons-->
+
+	<section class="screens">
+		<div class="screens__container">
+			<h2 class="screens__title">
+				Lorem ipsum dolor sit amet.
+			</h2>
+			<div class="screens__content">
+				<div class="screens_picture--container">
+					<div class="screens__picture">
+						<div class="bigscreen">
+							<img src="img/screens/bigscreen.png" alt="" class="bigscreen-img scr-img">
+							<img src="img/screens/Ellipse_2.png" alt="" class="circle">
+						</div>
+						<div class="tablet">
+							<img src="img/screens/tablet.png" alt="" class="tablet-img scr-img">
+						</div>
+						<div class="mobile">
+							<img src="img/screens/mobile.png" alt="" class="mobile-img scr-img">
+						</div>					
+					</div>
+				</div>
+				<div class="screens_inform">
+					<ul class="screens__list">
+						<li class="screens__items">							
+								Sed ut perspiciatis unde omnis						
+						</li>
+						<li class="screens__items">							
+								Lorem ipsum dolor sit amet, consectetur adipisicing							
+						</li>
+						<li class="screens__items">							
+								Sed ut perspiciatis unde omnis							
+						</li>
+						<li class="screens__items">							
+								Lorem ipsum dolor sit amet, consectetur adipisicing	 					
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section><!-- screens -->
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__logo">
+				<a href="#" class="header__logo--img foter--img">
+					<img src="img/header/logo_star.png" alt="logo_star">
+				</a>
+				<div  class="header__logo--text footer__logo--text">
+					<a href="#" class="header__logo--link footer--link">theyallow</a>
+				</div>							
+			</div>
+			<div class="footer__text">
+				Designed by cssauthor.com
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
